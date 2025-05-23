@@ -49,7 +49,7 @@ console.log(countCharacters.length);
 
 // Beispiel: console.log(formatToCurrency(0.5)); // Ausgabe: "0,50€"
 
-let num = 0.5;
-let euro = num.toFixed(2);
+let value = 0.5;
+let euro = value.toFixed(2);
 
 console.log(euro + "€");
