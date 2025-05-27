@@ -11,6 +11,7 @@
     <script src="./functions.js"></script>
     <script src="./objects.js"></script>
     <script src="./übung.js"></script>
+    <script src="./zoom1.js"></script>
     <style src="./style.css"></style>
     <style>
         .green_bg{
@@ -24,17 +25,32 @@
     </style>
 
 </head>
-<body>
+<body onload="console.log(123);
+">
     <h1 id="webseite_title">Der Title der Webseite</h1>
+    <input id="h1_input" type="text" value="H1 Text hier eingeben">
+    <button id="h1_btn">H1 Text Übernehmen</button>
 
     <div class="green_bg" id="test_div"></div>
 
-    <input id="test_input" type="number" value="5">
+    <input id="test_input" type="number" value="8000">
 
     <p id="ptag">mein P-tag</p>
 
+    <input type="text" value="key up/down" onkeyup="console.log('keydup')" onkeydown="console.log('keydown')"> 
+    <input type="text" value="onfocus" onfocus="console.log('onfocus')">
+    <input id="checkbox" type="checkbox" value="onchange" onchange="console.log('onchange')">
+    <input type="text" value="onchange" onchange="console.log('onchange')">
+
     <button onclick="toggleDNone('ptag')">Hier Klicken</button>
     
+    <br>
+    <br>
+    
+    <button id="date_btn">Click for Date</button>
+    <p id="date_output"></p>
+
+
 </body>
 <script src="./dom_manipulation.js"></script>
 </html>

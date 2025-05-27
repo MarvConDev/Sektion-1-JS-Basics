@@ -26,7 +26,7 @@ let myPow = 2**8;
 
 
 
- let myteststring ="hallo     "
+ let myteststring ="halloo     "
 
 
  myteststring = myteststring.trim();

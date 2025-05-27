@@ -1,11 +1,12 @@
 let title = document.getElementById('webseite_title');
-title.innerHTML = "neuer Title";
+title.innerHTML = "H1 test bla bla";
+document.getElementById("h1_input")
 
 
 // document.getElementById('test_div').innerHTML = '<button id="button">Klick Mich</button>';
 document.getElementById('test_div').innerHTML = '<p>test</p>';
 
-document.getElementById('test_div').classList.remove('green_bg');
+document.getElementById('test_div').classList.add('green_bg'); // add GRÜN ist da remove GRÜN ist weg // trigger //
 
 document.getElementById('test_input').setAttribute('value', 123)
 
@@ -20,4 +21,11 @@ function toggleDNone(id){
 function logger(){
     console.log(555555);
     
+}
+
+document.getElementById("date_btn").addEventListener("click", displayDate);
+
+function displayDate() {
+    document.getElementById("date_output").innerHTML = Date();
+
 }
